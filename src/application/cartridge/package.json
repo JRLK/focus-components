@@ -1,0 +1,20 @@
+{
+  "name": "cartridge",
+  "version": "1.0.0",
+  "description": "Application cartridge",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "layout",
+    "cartridge",
+    "header",
+    "smart"
+  ],
+  "author": "focus@kleegroup.com",
+  "license": "MIT"
+}

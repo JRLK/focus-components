@@ -1,0 +1,19 @@
+{
+  "name": "error-center",
+  "version": "1.0.0",
+  "description": "Error center.",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "error",
+    "notification",
+    "smart"
+  ],
+  "author": "focus@kleegroup.com",
+  "license": "MIT"
+}

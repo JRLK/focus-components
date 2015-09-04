@@ -1,0 +1,19 @@
+{
+  "name": "menu",
+  "version": "1.0.0",
+  "description": "Application menu.",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "menu",
+    "navigation",
+    "dumb"
+  ],
+  "author": "focus@kleegroup.com",
+  "license": "MIT"
+}

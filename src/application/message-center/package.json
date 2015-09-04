@@ -1,0 +1,19 @@
+{
+  "name": "message-center",
+  "version": "1.0.0",
+  "description": "Message center.",
+  "main": "index.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "message",
+    "notification",
+    "smart"
+  ],
+  "author": "focus@kleegroup.com",
+  "license": "MIT"
+}
