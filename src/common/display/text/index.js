@@ -25,7 +25,7 @@ const displayTextMixin = {
    * Render the value.
    * @return {string} The formated value.
    */
-  renderValue(){
+  renderValue() {
       const {formatter, value} = this.props;
       return formatter(value);
   },

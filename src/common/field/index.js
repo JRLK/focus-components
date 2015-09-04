@@ -54,7 +54,7 @@ let FieldMixin = {
     },
     /** @inheritdoc */
     componentWillReceiveProps: function fieldWillReceiveProps(newProps){
-        this.setState({value: newProps.value, values: newProps.values});
+        this.setState({value: newProps.value});
     },
     /**
     * Get the css class of the field component.

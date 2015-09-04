@@ -144,8 +144,8 @@ const fieldBuiltInComponentsMixin = {
         if (this.props.FieldComponent || this.props.InputLabelComponent) {
             return this.renderFieldComponent();
         }
-        let {values, value} = this.state;
-        let {name, valueKey, labelKey} = this.props;
+        let {value} = this.state;
+        let {name, valueKey, values, labelKey} = this.props;
         let _processValue = values ? result(find(values, {[valueKey || 'code']: value}), labelKey || 'label') : value;
         let buildedDislplayProps = assign({}, this.props, {
             id: name,

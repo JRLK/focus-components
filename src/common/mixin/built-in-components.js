@@ -72,14 +72,15 @@ module.exports = {
     textFor(name, options){
         options = options || {};
         const def = (this.definition && this.definition[name]) ? this.definition[name] : {};
+        //let _processValue = values ? result(find(values, {[valueKey || 'code']: value}), labelKey || 'label') : value;
+
         return (
             <Text
                 FieldComponent={def.FieldComponent}
                 formatter={options.formatter || def.formatter}
                 name={options.name || `${this.definitionPath}.${name}`}
                 style={options.style}
-                value={this.state[name]}
-                />
+                value={this.state[name]} />
         );
     },
     /**
