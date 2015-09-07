@@ -2,7 +2,7 @@
 
 const {builder, types} = require('focus').component;
 const assign = require('object-assign');
-
+const mdlBehaviour = require('../../mixin/mdl-behaviour');
 
 /**
 * Identity function.
@@ -14,7 +14,9 @@ const identity = d => d;
 * Input text mixin.
 * @type {Object}
 */
-const inputTextMixin = {
+const inputTextComponent = {
+    mixins: [mdlBehaviour],
+
     /** @inheritdoc */
     getDefaultProps() {
         return {
@@ -98,7 +100,7 @@ const inputTextMixin = {
         const inputProps = assign({}, this.props, {value}, {id: name, onChange: this._handleInputChange, onKeyPress: this._handleInputKeyPress});
         const pattern = error ? 'hasError' : null; //add pattern to overide mdl error style when displaying an focus error.
         return (
-            <div className='mdl-textfield mdl-js-textfield' data-focus='input-text'>
+            <div className='mdl-textfield mdl-js-textfield' data-focus='input-text' ref='inputText'>
                 <input className='mdl-textfield__input' ref='inputText' {...inputProps} pattern={pattern} />
                 <label className='mdl-textfield__label' htmlFor={name}>{placeHolder}</label>
                 {error &&
@@ -109,4 +111,4 @@ const inputTextMixin = {
 };
 
 
-module.exports = builder(inputTextMixin);
+module.exports = builder(inputTextComponent);
